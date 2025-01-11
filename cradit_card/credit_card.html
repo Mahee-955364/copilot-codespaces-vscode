@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = divce - width, initial-scale = 1.0">
+        <title>Credit Card</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                width: 100%;
+                height: 100vh;
+                background-color: rgb(113, 131, 131);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .bg{
+                background-image: url(credit_img/bg.jpeg);
+                width: 600px;
+                height: 300px;
+                border-radius: 20px;
+            }
+            .logo{
+                display: flex;
+                align-items: center;
+            }
+            .logo img{
+                width: 90px;
+                height: 50px;
+                margin-left:30px ;
+                margin-top: 30px;
+            }
+            h5{
+                color: white;
+                margin-left: 15px;
+                margin-top: 30px;
+            }
+            #chip{
+                margin-left: 240px;
+            }
+            .cn{
+                color: white;
+                margin-left: 30px;
+                margin-top: 50px;
+            }
+            .name{
+                display: flex;
+            }
+            h6{
+                color: white;
+                margin-left: 30px;
+                margin-top:50px;
+            }
+            .val{
+                margin-left: 290px;
+                margin-top: 30px;
+            }
+            .val span{
+                color: white;
+                display: inline-block;
+                margin-left: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bg">
+            <div class="logo">
+                <img src="credit_img/logo.jpeg" alt="">
+                <h5>Master Card</h5>
+                <img src="credit_img/chip.jpeg" id="chip">
+            </div>
+            <div class="cn">
+                <span><strong>Card Number</strong></span>
+                <h4>8050 &nbsp;5040 &nbsp;2030 &nbsp;3020 </h4>
+            </div>
+            <div class="name">
+                <h6>Maddela Mahendra</h6>
+                <div class="val">
+                    <span>Valid Thru</span><br>
+                    <span>05/28</span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
