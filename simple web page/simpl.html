@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = divce - width, initial-scale =1.0">
+        <title>Simple web page</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <style>
+            .nav-bar{
+                background-color: rgba(21, 17, 17, 0.8);
+                color: white;
+                width: 100%;
+                height: 70px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding:20px ;
+            }
+            .nav-bar ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 30px;
+            }
+            .nav-bar ul li{
+                list-style-type: none;
+                margin-left: 20px;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+            }
+            .img{
+                background-image: url(imgs/1.jpg);
+                background-repeat: no-repeat;
+                width: 300vh;
+                height: 100vh;
+            }
+            .text h1{
+                color: white;
+                word-spacing: 2px;
+                letter-spacing: 2px;
+                margin-top: 20%;
+                margin-left: 50px;
+            }
+            .btn{
+                margin-left:50px ;
+                margin-top: 10px;
+            }
+            #l{
+                border-width: 3px;
+                color: white;
+                width: 25vh;
+                border-radius: 10px;
+            }
+            #s{
+                width: 25vh;
+                border-radius: 10px;
+            }
+            #l:hover{
+                border-radius: 40%;
+                transition: 2s;
+            }
+            #s:hover{
+                border-radius: 40%;
+                transition: 2s;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="nav">
+            <nav class="nav-bar">
+                <h3><a href="#">mahendra maddela</a></h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contect</a></li>
+                    <li><a href="#">Feedback</a></li>
+                </ul>
+            </nav>
+            <div class="img">
+                <div class="text">
+                    <h1>Create Amazing Website <br> Pure HTML & CSS Only</h1>
+                </div>
+                <div class="btn">
+                    <button class="btn btn-outline-info" type="submit" id="l">Learn more</button>
+                    <button class="btn btn-primary" type="submit" id="s">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
