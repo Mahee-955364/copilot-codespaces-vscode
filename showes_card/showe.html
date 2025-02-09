@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = divice - width initial-scale = 1.0">
+        <title>showe card</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                width: 100%;
+                height: 100vh;
+                background-color: #7ed6df;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+            .container{
+                background-color: white;
+                max-width: 640px;
+                width: 100%;
+                height:600px;
+                box-shadow: 30px  30px 10px 10px ;
+                padding: 25px;
+            }
+            p{
+                color: rgba(16, 15, 15,0.5);
+                word-spacing: 2px;
+                letter-spacing: 2px;
+            }
+            .img{
+                background-image:url(showe_img/1.png) ;
+                width: 700px;
+                height: 400px;
+                background-repeat: no-repeat;
+            }
+            .colors{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin:9px;
+            }
+            .colors span{
+                width: 20px;
+                height: 20px;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                margin-left: 10px;
+            }
+            .blue{
+                background-color:#7ed6df;
+            }
+            .green{
+                background-color:#badc58;
+            }
+            .yellow{
+                background-color:#f9ca24;
+            }
+            .rose{
+                background-color:#ff7979;
+            }
+            .colors .active ::after{
+                cursor: "";
+                width: 22px;
+                height: 22px;
+                border-style: 5px solid #8888;
+                position: absolute;
+                border-radius: 50%;
+                box-sizing: border-box;
+                left: -4px;
+                right: -4px;
+            }
+            .pb{
+                display: flex;
+                margin-top: 30px;
+                font-size: 30px;
+                justify-content: space-between;
+            }
+            .price{
+                color: #ff7979;
+            }
+            a{
+                text-decoration: none;
+                color: #ff7979;
+                border:3px solid #ff7979 ;
+                padding: 6px;
+                border-radius: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>ORIGINAL SHOES</h1>
+            <P>Lorem ipsum dolor sit amet</P>
+            <div class="img"></div>
+            <div class="colors">
+                <span class="blue active" data-type="#7ed6df"></span>
+                <span class="green" data-type="#badc58"></span>
+                <span class="yellow" data-type="#f9ca24"></span>
+                <span class="rose" data-type="#ff7979"></span>
+            </div>
+            <div class="pb">
+                <div class="price">$90</div>
+                <div class="btn"><a href="#"> Add to Cart</a></div>
+            </div>
+        </div>
+    </body>
+</html>
